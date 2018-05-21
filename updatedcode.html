@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset ="utf-8">
+<title>First Task</title>
+</head>
+<body style ="background-color: dodgerblue">
+<h2 style="color:orangered;text-align:center; align-content: center;font-size:40px"><strong><em>Mentee Form</em></strong></h2>
+    <button style ="background-color: lime ; width :200px; align-self: center; padding : 20px; margin-left:90px; margin-left:auto;margin-right:auto;display:block;margin-bottom:0%;font-size:25px;color:#000066" type ="button" onclick ="fun1()">Add Mentee</button>
+   <div id ="h">
+    </div>
+    <script>
+    var e,f,g,h,i,h1,i1,g1;
+    function fun1(){
+        e=document.getElementById("h");
+        var t =document.createElement("p");
+        i=document.createTextNode("Mentee Name");
+        t.appendChild(i);
+        f=document.createElement("p");
+        var hl=document.createElement("hr");
+        hl.width="2000px";
+        hl.color="black";
+        hl.style="outset";
+        f.appendChild(hl);
+        e.appendChild(f);
+        f.id ="s";
+        h=document.createElement("p");
+        i=document.createTextNode("Mentee Name");
+        h.appendChild(i);
+        h.style.marginLeft="120px";
+        h.style.color="#000066";
+        h.style.fontSize="25px";
+        f.appendChild(h);
+        g=document.createElement("input");
+        g.style.width="300px";
+        g.placeholder="Enter Name";
+        f.appendChild(g);
+        var b1=g;
+        var q11=document.createElement("button");
+        q11.style.border="2px solid lime";
+        q11.style.padding="5px";
+        q11.style.width="150px";
+        q11.style.height="30px";
+        q11.style.backgroundColor = "#ccff33"; 
+        var q22=document.createTextNode("Edit Name");
+        q11.appendChild(q22);
+        q11.style.color="#000066";
+        f.appendChild(q11); 
+        q11.addEventListener("click" , function(){var o2= prompt("Enter New Name");
+        b1.value =o2;
+            if(o2)
+                { alert("Are you sure with the changes?");  }
+            });
+        h2=document.createElement("p");
+        i2=document.createTextNode("Roll Number");
+        h2.appendChild(i2);
+        h2.style.marginLeft="120px";
+        h2.style.marginLeft="120px";
+        h2.style.color="#000066";
+        h2.style.fontSize="25px";
+        f.appendChild(h2);
+        g2=document.createElement("input");
+        g2.style.width="300px";
+        g2.placeholder="Input Roll Number";
+        f.appendChild(g2);
+        var b2=g2;
+        var q111=document.createElement("button");
+        q111.style.border="2px solid lime";
+        q111.style.padding="5px";
+        q111.style.width="150px";
+        q111.style.height="30px";
+        q111.style.backgroundColor = "#ccff33"; 
+        var q222=document.createTextNode("Edit Roll Number");
+        q111.style.color="#000066";
+        q111.appendChild(q222)
+        f.appendChild(q111); 
+        q111.addEventListener("click" , function(){var o1=prompt("Enter New Roll Number");          
+        b2.value =o1;
+        if(o1){
+        alert("Are you sure with the changes?");}
+        });
+        h2=document.createElement("p");
+        i2=document.createTextNode("Department");
+        h2.appendChild(i2);
+        h2.style.marginLeft="120px";
+        h2.style.color="#000066";
+        h2.style.fontSize="25px";
+        f.appendChild(h2);
+        g2=document.createElement("input");
+        g2.style.width="300px";
+        g2.placeholder="Specify Department";
+        f.appendChild(g2);
+        var b2=g2;
+        var q111=document.createElement("button");
+        q111.style.border="2px solid lime";
+        q111.style.padding="5px";
+        q111.style.width="150px";
+        q111.style.height="30px";
+        q111.style.backgroundColor = "#ccff33"; 
+        var q222=document.createTextNode("Edit Department");
+        q111.appendChild(q222)
+        q111.style.color="#000066";
+        f.appendChild(q111); 
+        q111.addEventListener("click" , function(){var o1=prompt("Enter New Department");          
+        b2.value =o1;
+        if(o1){
+        alert("Are you sure with the changes?");}
+        });
+        h2=document.createElement("p");
+        i2=document.createTextNode("Ratings(out of 10)");
+        h2.appendChild(i2);
+        h2.style.marginLeft="120px";
+        h2.style.color="#000066";
+        h2.style.fontSize="25px";
+        f.appendChild(h2);
+        g2=document.createElement("input");
+        if(g2.value>0 && g2.value<4){
+            c.style.backgroundColor="red";
+        }
+        else if (g2.value>3 && g2.value<8) {
+            c.style.backgroundColor="yellow";
+        }
+        else if (g2.value>7) {
+            c.style.backgroundColor="green";
+        }
+        g2.style.width="300px";
+        g2.placeholder="Give us a Rating!";
+        f.appendChild(g2);
+        var b2=g2;
+        var q111=document.createElement("button");
+        q111.style.border="2px solid lime";
+        q111.style.padding="5px";
+        q111.style.width="150px";
+        q111.style.height="30px";
+        q111.style.backgroundColor = "#ccff33"; 
+        var q222=document.createTextNode("Press here to give a Rating");
+        q111.style.color="#000066";
+        q111.appendChild(q222);
+        q111.style.width="200px";
+        f.appendChild(q111); 
+        q111.addEventListener("click" , function(){
+        var o1=prompt("Enter New Ratings");
+        if(o1){
+        alert("Are you sure with the changes?");
+        b2.value =o1;
+        if(b2.value>0 && b2.value<4){
+        c.style.backgroundColor="red";
+        }
+        else if(b2.value>3 && b2.value<8){
+        c.style.backgroundColor="#ffa31a";
+        }
+        else if(b2.value>7){
+        c.style.backgroundColor="green";
+        }
+        else if(!b2.value){
+            c.style.backgroundColor="dodgerblue";
+        }
+        }
+        });
+        h1=document.createElement("p");
+        i1=document.createTextNode("Comments");
+        h1.appendChild(i1);
+        h1.style.marginLeft="120px";
+        h1.style.color="#000066";
+        h1.style.fontSize="25px";
+        f.appendChild(h1);
+        g1=document.createElement("input");
+        g1.style.width="300px";
+        g1.style.height="50px";
+        g1.placeholder="Your Comment goes here...";
+        f.appendChild(g1);
+        var b3=g1;
+        var q1111=document.createElement("button");
+        q1111.style.border="2px solid lime";
+        q1111.style.padding="5px";
+        q1111.style.width="150px";
+        q1111.style.height="30px";
+        q1111.style.backgroundColor = "#ccff33"; 
+        var q2222=document.createTextNode("Edit Comment");
+        q1111.style.color="#000066";
+        q1111.appendChild(q2222);
+        f.appendChild(q1111); 
+        q1111.addEventListener("click" , function(){var o=prompt("Enter New Comment");
+            b3.value =o;
+        if(o){
+        alert("Are you sure with the changes?");
+                   }
+                   });
+        var c=f; 
+        var k = document.createElement("p");
+        var k1 = document.createTextNode("");
+        k.appendChild(k1);
+        f.appendChild(k);
+        var q1=document.createElement("button");
+        q1.style.border="3px dashed red";
+        q1.style.padding="5px";
+        q1.style.width="200px";
+        q1.style.height="40px";
+        q1.style.color="white";
+        q1.style.border="2px solid white";
+        q1.style.backgroundColor = "#ff4000"; 
+        var q2=document.createTextNode("Delete Record");
+        q1.style.fontSize="20px";
+        q1.appendChild(q2);
+        f.appendChild(q1); 
+        q1.addEventListener("click" , function(){c.innerHTML="";});
+        }
+        function fun(){
+            var x,y;
+            x=document.getElementById("h");
+            y=document.getElementById("s");
+            x.removeChild(y);
+    }
+</script>
+</body>
+</html>
